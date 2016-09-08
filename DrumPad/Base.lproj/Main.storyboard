@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrumPad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ht-Ef-0Wo">
+                                <rect key="frame" x="0.0" y="20" width="300" height="193.5"/>
+                                <state key="normal" image="BassDrum"/>
+                                <connections>
+                                    <action selector="playBassDrum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8FV-TC-Zbc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0q-a7-UDN">
+                                <rect key="frame" x="0.0" y="213.5" width="300" height="193"/>
+                                <state key="normal" image="Snare"/>
+                                <connections>
+                                    <action selector="playSnare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SfK-PI-n2F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgH-X4-qy6">
+                                <rect key="frame" x="0.0" y="406.5" width="300" height="193.5"/>
+                                <state key="normal" image="Ride"/>
+                                <connections>
+                                    <action selector="playCrash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xrp-9m-yiD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyb-XF-896">
+                                <rect key="frame" x="300" y="213.5" width="300" height="193"/>
+                                <state key="normal" image="HiTom"/>
+                                <connections>
+                                    <action selector="playHighTom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DNH-G6-JRr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97V-87-mfT">
+                                <rect key="frame" x="300" y="406.5" width="300" height="193.5"/>
+                                <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="musicControlButtonHasBeenClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZE2-hf-Qky"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0J-lJ-HDD">
+                                <rect key="frame" x="300" y="20" width="300" height="193.5"/>
+                                <state key="normal" image="Hi-Hats"/>
+                                <connections>
+                                    <action selector="playHihat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="va5-TB-MBr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jyb-XF-896" secondAttribute="trailing" id="01f-yX-J8A"/>
+                            <constraint firstItem="wgH-X4-qy6" firstAttribute="width" secondItem="9Ht-Ef-0Wo" secondAttribute="width" id="1eH-mz-CkR"/>
+                            <constraint firstItem="97V-87-mfT" firstAttribute="top" secondItem="jyb-XF-896" secondAttribute="bottom" id="4Is-q1-O5b"/>
+                            <constraint firstItem="97V-87-mfT" firstAttribute="leading" secondItem="wgH-X4-qy6" secondAttribute="trailing" id="4u2-Iw-REL"/>
+                            <constraint firstItem="wgH-X4-qy6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="68j-fq-Sy7"/>
+                            <constraint firstItem="9Ht-Ef-0Wo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6II-3g-ybE"/>
+                            <constraint firstItem="jyb-XF-896" firstAttribute="top" secondItem="k0J-lJ-HDD" secondAttribute="bottom" id="8fm-yv-qgg"/>
+                            <constraint firstItem="d0q-a7-UDN" firstAttribute="height" secondItem="9Ht-Ef-0Wo" secondAttribute="height" id="GjU-i6-tbc"/>
+                            <constraint firstItem="d0q-a7-UDN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lik-rc-iuF"/>
+                            <constraint firstAttribute="trailing" secondItem="k0J-lJ-HDD" secondAttribute="trailing" id="MwV-j1-qoB"/>
+                            <constraint firstItem="k0J-lJ-HDD" firstAttribute="leading" secondItem="9Ht-Ef-0Wo" secondAttribute="trailing" id="OEB-UY-Vxq"/>
+                            <constraint firstItem="k0J-lJ-HDD" firstAttribute="width" secondItem="9Ht-Ef-0Wo" secondAttribute="width" id="Oja-yL-6ge"/>
+                            <constraint firstItem="9Ht-Ef-0Wo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TdM-ep-Ihq"/>
+                            <constraint firstItem="jyb-XF-896" firstAttribute="height" secondItem="9Ht-Ef-0Wo" secondAttribute="height" id="Ui9-xy-S22"/>
+                            <constraint firstItem="d0q-a7-UDN" firstAttribute="width" secondItem="9Ht-Ef-0Wo" secondAttribute="width" id="Vu6-Yu-Pb5"/>
+                            <constraint firstAttribute="trailing" secondItem="97V-87-mfT" secondAttribute="trailing" id="W52-u2-9eF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wgH-X4-qy6" secondAttribute="bottom" id="afW-uU-W0T"/>
+                            <constraint firstItem="k0J-lJ-HDD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="alN-uk-Qpc"/>
+                            <constraint firstItem="97V-87-mfT" firstAttribute="height" secondItem="9Ht-Ef-0Wo" secondAttribute="height" id="bCc-UF-nTo"/>
+                            <constraint firstItem="d0q-a7-UDN" firstAttribute="top" secondItem="9Ht-Ef-0Wo" secondAttribute="bottom" id="cfF-bk-McO"/>
+                            <constraint firstItem="jyb-XF-896" firstAttribute="width" secondItem="9Ht-Ef-0Wo" secondAttribute="width" id="d7C-4a-fwV"/>
+                            <constraint firstItem="jyb-XF-896" firstAttribute="leading" secondItem="d0q-a7-UDN" secondAttribute="trailing" id="fwl-Dq-2ho"/>
+                            <constraint firstItem="97V-87-mfT" firstAttribute="width" secondItem="9Ht-Ef-0Wo" secondAttribute="width" id="nMJ-y2-wB7"/>
+                            <constraint firstItem="wgH-X4-qy6" firstAttribute="height" secondItem="9Ht-Ef-0Wo" secondAttribute="height" id="nnW-Iy-ToB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="97V-87-mfT" secondAttribute="bottom" id="oRq-5y-ZUS"/>
+                            <constraint firstItem="k0J-lJ-HDD" firstAttribute="height" secondItem="9Ht-Ef-0Wo" secondAttribute="height" id="wxG-hv-EFh"/>
+                            <constraint firstItem="wgH-X4-qy6" firstAttribute="top" secondItem="d0q-a7-UDN" secondAttribute="bottom" id="zPX-XO-pcv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bassDrumButton" destination="9Ht-Ef-0Wo" id="AZA-Za-Jfv"/>
+                        <outlet property="crashButton" destination="wgH-X4-qy6" id="gVJ-vW-jKk"/>
+                        <outlet property="highTomButton" destination="jyb-XF-896" id="ldt-4D-fHQ"/>
+                        <outlet property="hihatButton" destination="k0J-lJ-HDD" id="b1X-CC-PE3"/>
+                        <outlet property="musicControlButton" destination="97V-87-mfT" id="KV9-j0-ciZ"/>
+                        <outlet property="snareButton" destination="d0q-a7-UDN" id="7BU-uJ-1p6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="322"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BassDrum" width="430" height="411"/>
+        <image name="Hi-Hats" width="800" height="800"/>
+        <image name="HiTom" width="600" height="500"/>
+        <image name="Ride" width="1555" height="991"/>
+        <image name="Snare" width="880" height="539"/>
+        <image name="play" width="372" height="372"/>
+    </resources>
+</document>
